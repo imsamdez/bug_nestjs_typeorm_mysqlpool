@@ -9,9 +9,12 @@
 
 This repo illustrate an issue with typeorm subscribers.
 
-In this dummy example, we have two entities: Article and Comment and a MySQL pool size set to 10 (default value).
+In this dummy example, we have :
 
-A `afterLoad` subscriber is defined on Article.
+- An entity Article
+- An entity Comment
+- A MySQL pool size set to 10
+- A `afterLoad` subscriber on Article (see bellow)
 
 ```typescript
   // src/Article/article.subscriber.ts
